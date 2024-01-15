@@ -9,6 +9,8 @@ class HttpClientImplementation implements HttpClient {
 
   @override
   Future get({required String url}) async {
-    return await client.get(Uri.http(url));
+    return await client.get(
+      Uri.http(url),
+    );
   }
 }
